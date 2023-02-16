@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.hfad.beeradviser.BeerExpert;
+import com.hfad.ehealth.PossibleMeasure;
 
 import java.util.List;
 
@@ -21,20 +21,19 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickFindBeer(View view) {
         //Get txt view
-        TextView brands = findViewById(R.id.beerTxtView);
+        TextView measuresTxtView = findViewById(R.id.illnessTxtView);
         //Get Spinner
-        Spinner listBeerType = findViewById(R.id.beerSpinner);
+        Spinner listIllnesses = findViewById(R.id.illnessSpinner);
         //Convert spinner text to string
-        String beerType = String.valueOf(listBeerType.getSelectedItem());
-        //Create new Beer Expert class
-        BeerExpert beerExpert = new BeerExpert();
-        //Find recommended beers by type of beer
-        List<String> recommendedBeers = beerExpert.getBrands(beerType);
+        String illnessType = String.valueOf(listIllnesses.getSelectedItem());
+        //Create new Possible Measure class
+        PossibleMeasure possibleMeasure = new PossibleMeasure();
+        //Find measures by illness
+        List<String> measures = possibleMeasure.getMeasures(illnessType);
         //Set list in text view
-        brands.setText("");
-        for (String beer : recommendedBeers) {
-            System.out.println(beer);
-            brands.append("- " + beer + "\n");
+        measuresTxtView.setText("");
+        for (String measure : measures) {
+            measuresTxtView.append("- " + measure + "\n");
         }
 
     }

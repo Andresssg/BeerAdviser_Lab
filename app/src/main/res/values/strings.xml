@@ -1,11 +1,10 @@
 <resources>
-    <string name="app_name">Beer Adviser</string>
-    <string name="find_beer">Find Beer!</string>
-    <string name="brands">No beers selected</string>
-    <string-array name="beerList">
-        <item>Light</item>
-        <item>Amber</item>
-        <item>Brown</item>
-        <item>Dark</item>
+    <string name="app_name">Milagroso eHealth</string>
+    <string name="find_illness">Encontrar enfermedad</string>
+    <string name="illnesses">Enfermedad no seleccionada</string>
+    <string-array name="illnessList">
+        <item>Diabetes</item>
+        <item>Hipertensión</item>
+        <item>Insuficiencia cardiaca</item>
     </string-array>
 </resources>

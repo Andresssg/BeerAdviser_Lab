@@ -7,34 +7,34 @@
     tools:context=".MainActivity" >
 
     <Button
-        android:id="@+id/findBeerBtn"
+        android:id="@+id/findIllnessBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="onClickFindBeer"
-        android:text="@string/find_beer"
+        android:text="@string/find_illness"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/beerTxtView"
+        android:id="@+id/illnessTxtView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/brands"
+        android:text="@string/illnesses"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/findBeerBtn"
+        app:layout_constraintTop_toBottomOf="@+id/findIllnessBtn"
         app:layout_constraintVertical_bias="0.226" />
 
     <Spinner
-        android:id="@+id/beerSpinner"
+        android:id="@+id/illnessSpinner"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:entries="@array/beerList"
-        app:layout_constraintBottom_toTopOf="@+id/findBeerBtn"
+        android:entries="@array/illnessList"
+        app:layout_constraintBottom_toTopOf="@+id/findIllnessBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
